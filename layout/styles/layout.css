@@ -7,11 +7,10 @@ Licence: Free to use under our free template licence terms
 Licence URI: https://www.os-templates.com/template-terms
 File: Layout CSS
 */
-
 @import url("font-awesome.min.css");
 @import url("framework.css");
 
-
+btn
 /* Rows
 --------------------------------------------------------------------------------------------------------------- */
 .row1{border-bottom:1px solid;}
@@ -258,7 +257,7 @@ td{border-width:0 1px;}
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
 body{color:#A8A7A6; background-color:#0F1620;}
-a{color:#15AD72;}
+a{color: #99ad15;}
 a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#F4F4F4;}
 label span{color:#FF0000; background-color:inherit;}
@@ -271,7 +270,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#15AD72;}
 .overlay.coloured::after{background-color:rgba(21,173,114,.4); /* #15AD72 */}
 
 .btn, .btn.inverse:hover{color:#FFFFFF; background-color:#15AD72; border-color:#15AD72;}
-.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+.btn:hover, .btn.inverse{color:white; background-color:black; border-color:inherit;}
 
 
 /* Rows */
@@ -416,4 +415,18 @@ table a, #comments a{background-color:inherit;}
 
 	.font-x2{font-size:1.4rem;}
 	.font-x3{font-size:1.6rem;}
+}
+
+@media (min-width:900px) {
+	.flex-box{
+		display: flex;
+		place-items: center;
+	}
+}
+
+@media (max-width:900px) {
+	.flex-box{
+		display: grid;
+		place-items: center;
+	}
 }
